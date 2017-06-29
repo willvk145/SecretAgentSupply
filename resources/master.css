@@ -79,7 +79,8 @@ nav .container{
 }
 .container a{
 	text-decoration: none;
-	padding: .75rem 0;
+	margin: .50rem 0;
+	padding: .25rem;
 	color: white;
 }
 
@@ -135,4 +136,75 @@ footer .container{
 	justify-content: left;
 	height: 100%;
 	align-items: center;
+}
+
+#small{
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.container{
+		width: 100%;
+	}
+
+	.item{
+		width: 47%;
+	}
+
+	.info{
+		width: 35%;
+	}
+
+	#glasses{
+		display: none;
+	}
+
+	#big{
+		display: none;
+	}
+
+	#small{
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.logo{
+		width: 100%;
+	}
+
+	.logo h3{
+		font-size: .77rem;
+		padding: 1rem 0 .25rem 2rem;
+	}
+
+	.logo h1{
+		font-size: 1rem;
+		padding: 0 0 1rem 2rem;
+	}
+
+	.item{
+		width: 90%;
+	}
+
+	#watch{
+		display: none;
+	}
+
+	.info{
+		width: 90%;
+		padding-bottom: 0.5rem;
+	}
+
+	.contact .container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.products .container{
+		flex-direction: column;
+		align-items: center;
+	}
 }
